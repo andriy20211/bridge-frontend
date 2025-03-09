@@ -20,15 +20,12 @@
     </header>
     <main class="main game-main">
         <div class="game-container">
-            <!-- Інформація про гравців -->
             <div class="game-info">
                 <div class="game-player">Ваш рахунок: 100</div>
                 <div class="game-code">Код гри: 12345</div>
             </div>
 
-            <!-- Ігрове поле -->
             <div class="game-field">
-                <!-- Гравець 2 (ліворуч) -->
                 <div class="game-opponent game-opponent-left">
                     <div class="game-opponent-name">Гравець 2: 80</div>
                     <div class="game-opponent-cards">
@@ -37,7 +34,6 @@
                     </div>
                 </div>
             
-                <!-- Гравець 3 (зверху) -->
                 <div class="game-opponent game-opponent-top">
                     <div class="game-opponent-name">Гравець 3: 120</div>
                     <div class="game-opponent-cards">
@@ -46,12 +42,10 @@
                     </div>
                 </div>
             
-                <!-- Центральна карта -->
                 <div class="game-center">
-                    <div class="game-center-card"></div>
+                        <div class="card" data-suit="heart" data-value="8"></div>
                 </div>
             
-                <!-- Гравець 4 (праворуч) -->
                 <div class="game-opponent game-opponent-right">
                     <div class="game-opponent-name">Гравець 4: 90</div>
                     <div class="game-opponent-cards">
@@ -60,20 +54,21 @@
                     </div>
                 </div>
             
-                <!-- Колода карт -->
-                <div class="game-deck"></div>
+                <div class="game-deck">
+                    <div class="game-card flipped"></div>
+                </div>
             </div>
             
-            <!-- Карти гравця (користувача) -->
             <div class="game-player-cards">
-                <div class="game-card"></div>
-                <div class="game-card"></div>
-                <div class="game-card"></div>
-                <div class="game-card"></div>
-                <div class="game-card"></div>
+                <div class="card" data-suit="heart" data-value="A"></div>
+  <div class="card" data-suit="club" data-value="2"></div>
+  <div class="card" data-suit="heart" data-value="K"></div>
+  <div class="card" data-suit="spade" data-value="9"></div>
+  <div class="card" data-suit="club" data-value="J"></div>
             </div>
         </div>
     </main>
     <script src="script.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
